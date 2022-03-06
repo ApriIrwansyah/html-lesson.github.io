@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.section {
+    margin: 0 1.2rem 0 1.2rem;
+}
+
+/* HEADER */
+
+.navbar {
+   /*  background: coral; */
+    color: #333;
+}
+
+.nav-judul h2 {
+    padding: 1.2rem 0 1.2rem 0;
+    /* background: teal; */
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.nav-menu .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0 1.4rem 0;
+}
+.nav-menu .nav-list .nav_item {
+   /*  background: rgb(231, 174, 134); */
+    padding: .2rem;
+}
+.nav-menu .nav-list .nav_item a{
+    color: #333;
+    font-weight: 500;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+}
+
+.nav-menu .nav-list .nav_item a:active{
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-menu i {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu i:active {
+    color: #666;
+}
+
+/* HEADER */
+
+/* TOP WRAPPER */
+.top-wrapper {
+    height: 350px;
+    background: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-wrapper .container p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    /* padding-top: 2rem; */
+    padding-bottom: 2.5rem;
+}
+
+.top-wrapper .container input[type="submit"] {
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+   /*  margin-bottom: 2rem; */
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: .8rem .8rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    cursor: pointer;
+}
+.top-wrapper .container input[type="submit"]:active {
+  opacity: .5;
+}
+
+/* TOP WRAPPER */
+
+/* LESSON WRAPPER */
+.lesson-wrapper {
+   /*  background: blueviolet; */
+}
+
+.lesson-wrapper .container {
+   padding: 1.6rem 2rem 2rem;
+}
+.lesson-wrapper .container h2 {
+   /* background: lightgreen; */
+   padding: 1rem 0;
+}
+
+
+.lessons {
+    /* background: salmon; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    /* gap: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.lessons .lesson-content {
+    width: 27%;
+    background-color: rgb(88, 88, 232);
+    color: #fff;
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+.lessons .lesson-content a {
+   display: block;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.container .heading h2 {
+    padding-left: 1rem ;
+}
+
+.lesson-content h3, p, a {
+    padding-bottom: 1rem;
+}
+
+.lesson-content h3 {
+    font-size: 1.2rem ;
+}
+.lesson-content p {
+    font-size: .8rem;
+}
+
+.lesson-content a {
+    text-decoration: underline;
+}
+/* LESSON WRAPPER */
+
+
+/* FOOTER */
+
+.footer {
+    border-top: .2rem solid rgb(189, 189, 248);
+    margin-bottom: 100px;
+}
+
+.footer-container {
+   /*  background: darkslateblue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.footer-logo {
+   /*  background: darkgoldenrod; */
+    padding-top: .8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-content {
+    display: flex;
+    /* background: darkgray; */
+    padding-top: .8rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.footer-data:nth-child(1) {
+    margin-right: 5rem;
+}
+
+.footer-data .footer-subtitle {
+    font-size: 1rem;
+    text-decoration: underline;
+     padding-top: .8rem;
+    padding-bottom: .6rem;
+    color: #333;
+}
+
+.footer-data .footer-item {
+    font-size: .8rem;
+    padding: .2rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.footer-data span {
+    display: inline-block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    color: #666;
+}
+
+/* FOOTER */
+
+/* MEDIA QUERY */
+/* UKURAN MOBIL SMARTPHONE */
+@media (max-width:670px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        /* background: salmon; */
+        padding-bottom: 2rem;
+    }
+    .nav-judul h2 {
+        font-size: 2rem;
+    }
+
+    .navbar .nav-menu i {
+        font-size: 2.5rem;
+        height: 100%;
+        line-height: 100%;
+        display: inline-block;
+        /* background: blue; */
+        padding: 1rem;
+    }
+
+   .nav-menu .nav-list{
+        display: none;
+    }
+
+    .top-wrapper .container p {
+        font-size: 2.4rem;
+    }
+    
+    .lessons .lesson-content {
+        width: 100%;
+    }
+
+    .container input[type="submit"] {
+        font-size: 1rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo {
+        padding: 1.2rem 2rem;
+    }
+
+}
