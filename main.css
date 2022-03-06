@@ -247,7 +247,7 @@ a {
         font-size: 2.5rem;
         height: 100%;
         line-height: 100%;
-        display: block;
+        display: inline-block;
         /* background: blue; */
         padding: 1rem;
     }
